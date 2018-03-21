@@ -1,0 +1,13 @@
+<html> 
+ <head> 
+   <title> What do I See? </title> 
+ </head> 
+ <body> 
+   <h1> {{what_see}}! </h1> 
+ </body> 
+ <p>
+   {% if what_see_image != None %}
+   <img src="data:image/png;base64,{{ what_see_image }}" width="500">
+   {% endif %}
+ </p>
+</html> 

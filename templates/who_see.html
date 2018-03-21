@@ -1,0 +1,13 @@
+<html> 
+ <head> 
+   <title> Who Do I See? </title> 
+ </head> 
+ <body> 
+   <h1> {{who_see}} </h1> 
+ </body> 
+ <p>
+   {% if who_see_image != None %}
+   	<img src="data:image/png; base64,{{ who_see_image }}" width="500">
+   {% endif %}
+ </p>
+</html> 
