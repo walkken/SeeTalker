@@ -226,10 +226,7 @@ def selfie(fAlexa=False):
         SelfieAlert.apiEndpoint = ask_context.System.apiEndpoint
         SelfieAlert.apiAccessToken = 'Bearer ' + ask_context.System.apiAccessToken
                 
-       # start downdown for selfie using Alert library
-       # SelfieAlert.secs_rem = SelfieAlert.countdown_secs
-       # SelfieAlert.tmr = al_StartAlertTriggers (SelfieAlert.countdown_interval, SelfieAlert_Handler)
-
+        # count down for selfie
         for secs in range (SelfieAlert.countdown_secs,0,-1):
             selfie_txt = "Selfie will be taken in " if secs == SelfieAlert.countdown_secs else ""
             secs_txt = "second" if secs == 1 else "seconds"
@@ -245,7 +242,7 @@ def selfie(fAlexa=False):
         SelfieAlert.image = camera.get_frame()
         # Make camera sound
         PostDirective_SpeechText(SelfieAlert.requestId, SelfieAlert.apiAccessToken, GetSound_SSML(camera_sound_url))
-        sleep(1)
+        sleep(1) # give the directive time to produce sound
         
         # take selfie in N seconds
         fRepeatTimer = False #want single countdown (2 secs), not repeated intervals
