@@ -9,4 +9,4 @@ Key learning opportunities from SeeTalker:
 3.	Microsoft Cognitive Services: Face API, Vision Services API
 4.	Alexa skills directives
 5.	Sending Email
-6.	Python Flask and Amazon Ask web services framework
+6.	Python Flask and Amazon Ask web services framework (Flask-Ask)
