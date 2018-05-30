@@ -113,7 +113,7 @@ def ms_WhatDoYouSee (body):
     headers = {
         # Request headers.
         'Content-Type': 'application/octet-stream',
-        'Ocp-Apim-Subscription-Key': vision_api_endpoint,
+        'Ocp-Apim-Subscription-Key': vision_api_sub_key,
     }
      
     params = urllib.parse.urlencode({
