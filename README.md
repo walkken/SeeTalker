@@ -10,3 +10,6 @@ Key learning opportunities from SeeTalker:
 4.	Alexa skills directives
 5.	Sending Email
 6.	Python Flask and Amazon Ask web services framework (Flask-Ask)
+
+An overview and code documentation will be maintained on project Hackster.IO site at: 
+https://www.hackster.io/ken-walker/raspberry-pi-image-recognition-with-alexa-voice-6b7a01
